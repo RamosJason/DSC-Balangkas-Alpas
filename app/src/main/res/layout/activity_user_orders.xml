@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".PersonalOrdersPage">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:fontFamily="@font/autour_one"
+                android:maxLines="2"
+                android:text="Your Commute Booking"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/commuteDestination"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Destination: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/commuteCurrentLocation"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Current Location:"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/commutePaymentAmount"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Payment Amount:"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/commutePaymentMethod"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Payment Method: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/commuteStatus"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Status: "
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+
+                        android:id="@+id/changeOrderBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/uielement16"
+                        android:text="Change Booking"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        app:backgroundTint="@null"
+                        app:cornerRadius="20dp" />
+
+                    <Button
+                        android:id="@+id/cancelOrderBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@drawable/uielement16"
+                        android:text="Cancel Booking"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        app:backgroundTint="@null" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:fontFamily="@font/autour_one"
+                android:maxLines="2"
+                android:text="Your Delivery Booking"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/deliveryLocation"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Delivery Location: "
+                        android:textSize="16sp" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/deliveryDestination"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Destination: "
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/deliveryOrder"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Order: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/deliveryPaymentAmount"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Payment Amount: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/deliveryPaymentMethod"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Payment Method: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/deliveryStatus"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Status: "
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+
+                        android:id="@+id/changeOrderBtn2"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/uielement16"
+                        android:text="Change Booking"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/cancelOrderBtn2"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@drawable/uielement16"
+                        android:text="Cancel Booking"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        app:backgroundTint="@null" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:fontFamily="@font/autour_one"
+                android:maxLines="2"
+                android:text="Your Pickup Booking"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/pickupLocation"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Pickup Location: "
+                        android:textSize="16sp" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/pickupDestination"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Destination: "
+                        android:textSize="16sp" />
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/pickupItem"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Item: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/pickupPaymentAmount"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Payment Amount: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/pickupPaymentMethod"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Payment Method: "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/pickupStatus"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:text="Status: "
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/changeOrderBtn3"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/uielement16"
+                        android:text="Change Booking"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/cancelOrderBtn3"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@drawable/uielement16"
+                        android:text="Cancel Booking"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        app:backgroundTint="@null" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@drawable/uielement16"
+        android:fontFamily="@font/roboto"
+        android:text="Return To Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
